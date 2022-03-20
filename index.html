@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh bạ</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="main">
+        <form id="form-box">
+            <div class="Add">
+                <input placeholder="Tên" id="name" />
+                <input placeholder="Số điện thoại" id="phone" />
+                <button type="submit" id="add">THÊM</button>
+            </div>
+        </form>
+        <form id="form-search">
+            <div class="Search">
+                <input placeholder="Tìm kiếm" id="Search" style="width: 245px;" />
+                <button id="search" type="submit">TÌM </button>
+                <button id="delete" onclick="xoa()">XÓA TRÙNG</button>
+            </div>
+        </form>
+        <div class="list">
+
+            <div class="item">
+                <span id="tên">Bob</span>
+                <span id="phone-number">(572)-566-2397</span>
+            </div>
+            <div class="item">
+                <span id="tên">Cris</span>
+                <span id="phone-number">(864)-309-4841</span>
+            </div>
+            <div class="item">
+                <span id="tên">Alice</span>
+                <span id="phone-number">(816)-403-5456</span>
+            </div>
+            <div class="item">
+                <span id="tên">Daniel</span>
+                <span id="phone-number">(816)-403-5456</span>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
