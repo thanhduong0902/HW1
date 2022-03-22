@@ -69,6 +69,7 @@ formSearch.addEventListener("submit", (e) => {
     for (let i = 0; i < ds.length; i++) {
         if (!ds[i].children[0].innerHTML.includes(inform) && !ds[i].children[1].innerHTML.includes(inform)) {
             ds[i].remove();
+            i--;
         }
     }
     sapxep(ds);
